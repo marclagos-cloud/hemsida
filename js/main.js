@@ -3,7 +3,7 @@
 // sätts först här), och prefers-reduced-motion stänger av allt i css.
 
 const mal = document.querySelectorAll(
-  '.hero-inre, .sektion > *, .block, .steg li, .pelare, .slut-cta-inre > *, .bild'
+  '.hero-inre, .sektion > *, .block, .steg li, .pelare, .slut-cta-inre > *'
 );
 
 const observer = new IntersectionObserver(

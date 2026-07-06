@@ -38,9 +38,11 @@ media query (`max-width: 44rem`) längst ned i `css/style.css`.
 **Håll texterna korta** — Marc tyckte sidan blev för lång på mobil; rytmen
 är "lite copy, sen en bild" (`figure.bild`-band mellan sektioner).
 
-**Bilder:** Unsplash-foton (ingen attribution krävs) i `img/`, komprimerade
-med sips till 1400–1800 px, jpeg ~75. Välj bilder utan synliga ansikten.
-Fler kandidater ligger i `~/Desktop/stock bilder kids/`.
+**Bilder:** första försöket (foto-hero + bildband, 6 juli) revertades —
+Marc tyckte det blev dåligt; nytt försök planerat. Kandidater (Unsplash,
+ingen attribution krävs) ligger i `~/Desktop/stock bilder kids/`. Vid nästa
+försök: komprimera med sips till 1400–1800 px jpeg ~75, inga synliga
+ansikten, och stäm av utseendet med Marc innan push.
 
 **Designsystem:**
 - Rubriker: Playfair Display 400 via Google Fonts — **aldrig fet**, gärna
