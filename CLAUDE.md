@@ -17,7 +17,17 @@ ingen onödig fackjargong, inga överdrivna löften. Betona: individuell
 anpassning efter barnet och familjen, vetenskapligt grundade metoder,
 kostnadsfritt första samtal som lågtröskel-ingång.
 
-Stilen är **varm & personlig** — mjuka färger, serif, ombonat.
+**Designsystem** (inspirerat av sv.beataengellau.com — Marcs referens):
+- Rubriker: Playfair Display 400 via Google Fonts — **aldrig fet**, gärna
+  stor skala och kursiv betoning på enstaka ord
+- Brödtext/UI: Public Sans 300
+- Palett: bakgrund `#fdf9f7`, text `#3e342e`, salvia `#ccd5ae`,
+  dammrosa `#dfaab0`, blekblå `#e4ecf1`
+- Knappar: tunna outline-piller (1px, radius 300px), fylls mörka vid hover
+- Layout: asymmetri (stor rubrik vänster + färgblock höger), fullbreda
+  pastellsektioner, stora fristående citat
+- Motion: fade/lyft vid scroll (0.6s ease, IntersectionObserver i main.js),
+  respektera prefers-reduced-motion
 
 Text markerad med `<mark class="platshallare">` (gul markering på sidan) är
 platshållare som ska bytas mot riktigt innehåll — ta bort mark-taggen när

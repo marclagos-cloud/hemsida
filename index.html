@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ingrid Shragge — Beteendeterapi för barn med autism i Stockholm</title>
   <meta name="description" content="Individuell beteendeterapi (ABA) för barn med autism i Stockholmsområdet, samt föräldracoaching. Certifierad beteendeanalytiker (BCBA). Boka ett kostnadsfritt första samtal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Public+Sans:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,20 +18,21 @@
       <a href="#om">Om mig</a>
       <a href="#tjanster">Tjänster</a>
       <a href="#sa-gar-det-till">Så går det till</a>
-      <a class="knapp knapp-liten" href="#kontakt">Boka samtal</a>
+      <a class="knapp knapp-liten" href="#kontakt">Boka tid</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <p class="overrubrik">Beteendeterapi för barn med autism · Stockholm</p>
-      <h1>Trygghet för ert barn.<br>Stöd för hela familjen.</h1>
-      <p>
-        Jag erbjuder individuell en-till-en-terapi för barn med autism —
-        alltid utformad efter just ert barns utmaningar, styrkor och er
-        familjs vardag. Aldrig efter en mall.
-      </p>
-      <a class="knapp" href="#kontakt">Boka ett kostnadsfritt första samtal</a>
+      <div class="hero-inre">
+        <p class="kicker">Beteendeterapi för barn med autism · Stockholm</p>
+        <h1>Trygghet för ert barn.<br><em>Stöd för hela familjen.</em></h1>
+        <p class="hero-text">
+          Individuell en-till-en-terapi — alltid utformad efter just ert barns
+          utmaningar, styrkor och er familjs vardag. Aldrig efter en mall.
+        </p>
+        <a class="knapp" href="#kontakt">Boka ett kostnadsfritt första samtal</a>
+      </div>
     </section>
 
     <section id="om" class="sektion">
@@ -53,12 +57,14 @@
       </p>
     </section>
 
-    <section id="tjanster" class="sektion">
-      <p class="kicker">Vad jag erbjuder</p>
-      <h2>Tjänster</h2>
-      <div class="kort-rad">
-        <article class="kort">
-          <h3>En-till-en-terapi för barn</h3>
+    <section id="tjanster" class="tjanster">
+      <div class="tjanster-rubrik">
+        <p class="kicker">Vad jag erbjuder</p>
+        <h2>Vägar<br>framåt</h2>
+      </div>
+      <div class="tjanster-block">
+        <article class="block block-rosa">
+          <h3>En-till-en-terapi för barn <span class="nr">01</span></h3>
           <p>
             Individuell beteendeterapi grundad i tillämpad beteendeanalys
             (ABA). Vi arbetar med det som är viktigast för just ert barn —
@@ -67,8 +73,8 @@
           </p>
           <p class="pris"><mark class="platshallare">[längd/upplägg · pris]</mark></p>
         </article>
-        <article class="kort">
-          <h3>Föräldracoaching</h3>
+        <article class="block block-gron">
+          <h3>Föräldracoaching <span class="nr">02</span></h3>
           <p>
             Ni är de viktigaste personerna i ert barns liv. Jag ger er
             konkreta verktyg och strategier som fungerar i er vardag —
@@ -76,8 +82,8 @@
           </p>
           <p class="pris"><mark class="platshallare">[längd/upplägg · pris]</mark></p>
         </article>
-        <article class="kort">
-          <h3>Kostnadsfritt första samtal</h3>
+        <article class="block block-bla">
+          <h3>Kostnadsfritt första samtal <span class="nr">03</span></h3>
           <p>
             Vi börjar alltid med ett förutsättningslöst samtal där ni får
             berätta om ert barn och ställa alla frågor ni har. Ingen
@@ -133,24 +139,27 @@
 
     <section class="sektion citat">
       <blockquote>
-        ”Varje barn kan lära sig och utvecklas — när omgivningen möter barnet
-        där det är.”
+        ”Varje barn kan lära sig och utvecklas — när omgivningen möter
+        barnet <em>där det är</em>.”
       </blockquote>
+      <p class="attribution">— Ingrid Shragge</p>
     </section>
 
     <section id="kontakt" class="slut-cta">
-      <p class="kicker">Kostnadsfritt · 30 min · Ingen förbindelse</p>
-      <h2>Ska vi ta ett första samtal om ert barn?</h2>
-      <p>
-        Hör av er så hittar vi en tid. Ni bestämmer sedan i lugn och ro om
-        det känns rätt för er.
-      </p>
-      <a class="knapp" href="mailto:hej@example.com">Mejla mig</a>
-      <p class="kontakt-rader">
-        ✉️ <a href="mailto:hej@example.com"><mark class="platshallare">[mejladress]</mark></a><br>
-        📞 <mark class="platshallare">[telefonnummer]</mark><br>
-        📍 Stockholm med omnejd
-      </p>
+      <div class="slut-cta-inre">
+        <p class="kicker">Kostnadsfritt · 30 min · Ingen förbindelse</p>
+        <h2>Ska vi ta ett första samtal om ert barn?</h2>
+        <p>
+          Hör av er så hittar vi en tid. Ni bestämmer sedan i lugn och ro om
+          det känns rätt för er.
+        </p>
+        <a class="knapp" href="mailto:hej@example.com">Mejla mig</a>
+        <p class="kontakt-rader">
+          <a href="mailto:hej@example.com"><mark class="platshallare">[mejladress]</mark></a><br>
+          <mark class="platshallare">[telefonnummer]</mark><br>
+          Stockholm med omnejd
+        </p>
+      </div>
     </section>
   </main>
 
