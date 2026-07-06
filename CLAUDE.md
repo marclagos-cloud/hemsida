@@ -35,6 +35,12 @@ barnet är ett problem som ska fixas. Regler:
 **Mobilen först:** majoriteten av trafiken är mobil. Granska varje ändring
 i 390px-vy innan den pushas — mobilanpassningarna ligger samlade i en
 media query (`max-width: 44rem`) längst ned i `css/style.css`.
+**Håll texterna korta** — Marc tyckte sidan blev för lång på mobil; rytmen
+är "lite copy, sen en bild" (`figure.bild`-band mellan sektioner).
+
+**Bilder:** Unsplash-foton (ingen attribution krävs) i `img/`, komprimerade
+med sips till 1400–1800 px, jpeg ~75. Välj bilder utan synliga ansikten.
+Fler kandidater ligger i `~/Desktop/stock bilder kids/`.
 
 **Designsystem:**
 - Rubriker: Playfair Display 400 via Google Fonts — **aldrig fet**, gärna
