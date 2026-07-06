@@ -1,17 +1,19 @@
 /* ==================================================
-   Designsystem — inspirerat av sv.beataengellau.com
+   Designsystem
    Rubriker: Playfair Display 400 (aldrig fet)
    Brödtext: Public Sans 300
+   Egen palett: ink + teal + guld + himmelsblå
    ================================================== */
 
 :root {
-  --bg: #fdf9f7;
-  --text: #3e342e;
-  --dov: #6f645b;
-  --sage: #ccd5ae;
-  --rosa: #dfaab0;
-  --bla: #e4ecf1;
-  --kant: #e9e0d8;
+  --bg: #fbfaf7;
+  --text: #21353c;
+  --dov: #5c6f75;
+  --teal-mork: #274e53;
+  --teal: #d8e6e3;
+  --guld: #f0e3c0;
+  --himmel: #dce4f0;
+  --kant: #e3e5e0;
   --serif: "Playfair Display", Georgia, serif;
   --sans: "Public Sans", -apple-system, "Helvetica Neue", sans-serif;
   --max-bredd: 46rem;
@@ -48,7 +50,7 @@ strong {
 
 /* Platshållare: text som ska bytas ut mot riktigt innehåll */
 .platshallare {
-  background: #f3e8c9;
+  background: #fbdfc7;
   border-radius: 3px;
   padding: 0 0.2em;
 }
@@ -83,7 +85,7 @@ strong {
   flex-wrap: wrap;
   gap: 0.5rem;
   padding: 1.1rem clamp(1.5rem, 5vw, 4rem);
-  background: rgba(253, 249, 247, 0.85);
+  background: rgba(251, 250, 247, 0.85);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -128,7 +130,8 @@ strong {
 }
 
 .knapp:hover {
-  background: var(--text);
+  background: var(--teal-mork);
+  border-color: var(--teal-mork);
   color: var(--bg);
   transform: translateY(-1px);
 }
@@ -149,14 +152,14 @@ strong {
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.75rem;
-  color: var(--dov);
+  color: #48767c;
   margin-bottom: 1.25rem;
 }
 
 /* --- Hero --- */
 
 .hero {
-  background: var(--bla);
+  background: var(--teal);
   min-height: 82vh;
   display: flex;
   align-items: center;
@@ -236,9 +239,9 @@ strong {
   padding: 2.5rem clamp(1.5rem, 4vw, 3rem);
 }
 
-.block-rosa { background: var(--rosa); }
-.block-gron { background: var(--sage); }
-.block-bla  { background: var(--bla); }
+.block-sky  { background: var(--himmel); }
+.block-gold { background: var(--guld); }
+.block-teal { background: var(--teal); }
 
 .block h3 {
   font-size: 1.75rem;
@@ -304,7 +307,7 @@ strong {
 /* --- Förtroendepelare (mörk sektion) --- */
 
 .fortroende {
-  background: var(--text);
+  background: var(--teal-mork);
   color: var(--bg);
 }
 
@@ -321,7 +324,7 @@ strong {
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.72rem;
-  color: var(--sage);
+  color: #d3c18a;
   margin-bottom: 0.6rem;
 }
 
@@ -331,7 +334,7 @@ strong {
 }
 
 .pelare p:last-child {
-  color: #cfc5bb;
+  color: #c3d4d2;
   font-size: 0.92rem;
 }
 
@@ -360,10 +363,10 @@ strong {
   color: var(--dov);
 }
 
-/* --- Slut-CTA (rosa block) --- */
+/* --- Slut-CTA (guldblock) --- */
 
 .slut-cta {
-  background: var(--rosa);
+  background: var(--guld);
   text-align: center;
   padding: 6rem 1.5rem;
 }

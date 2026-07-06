@@ -6,33 +6,48 @@ skriv beslut och konventioner här så jobbar båda likadant.
 
 ## Vad sidan är
 
-Hemsida för **Ingrid Shragges verksamhet**: individuell beteendeterapi
-(ABA) för barn med autism i Stockholmsområdet, samt föräldracoaching.
-Ingrid är certifierad beteendeanalytiker (BCBA). Varumärket är hennes
-eget namn.
+Hemsida för **Ingrid Shragges verksamhet**: individuellt beteendestöd
+(ABA) för autistiska barn i Stockholmsområdet, samt föräldracoaching.
+Varumärket är hennes eget namn. **All text på sidan är på engelska.**
 
-**Målgrupp och ton:** föräldrar till barn med autism. Allt på sidan ska
-bygga **förtroende** — varmt, lugnt och konkret språk. Ingen säljighet,
-ingen onödig fackjargong, inga överdrivna löften. Betona: individuell
-anpassning efter barnet och familjen, vetenskapligt grundade metoder,
-kostnadsfritt första samtal som lågtröskel-ingång.
+**Fakta om Ingrid** (bekräftade av henne — hitta inte på mer):
+BCBA. Master's in Education, spec. ABA, Vanderbilt University (där även
+forskningsassistent i ABA-labb + multisensorisk neuroforskning med
+autistiska personer). Doktorand i medicinsk vetenskap vid KIND (Center of
+Neurodevelopmental Disorders), Karolinska Institutet, autismforskning.
+2 år ABA-kliniker, ABA-skolor; arbetat i hem/skola/klinik. 4 år
+autismforskning (små barn och äldre barn). Flytande engelska & svenska.
+Pris: 1 250 kr/timme. Mejl: ingridshragge@gmail.com.
+Telefon: +46 70 406 30 22.
 
-**Designsystem** (inspirerat av sv.beataengellau.com — Marcs referens):
+**Ton — viktigast av allt: neurodiversitets-bejakande.** ABA har rykte om
+sig att vara hårt; sidan ska visa motsatsen och får aldrig låta som att
+barnet är ett problem som ska fixas. Regler:
+- Skriv "autistic children" (identitet-först), aldrig "children suffering
+  from autism" e.d.
+- Aldrig ord som fix, normalize, treat, problem behaviors, compliance
+- Målet formuleras som well-being, kommunikation, autonomi, lek, bra dagar
+  — aldrig att göra barnet "mindre autistiskt" eller lära det maskera
+- Ingrids hållning: "alongside the child", assent-based, följer barnets
+  initiativ; ABA-kritiken bemöts öppet och ärligt (se #approach-sektionen)
+- I övrigt: varmt, lugnt, konkret. Ingen säljighet, inga överdrivna löften
+
+**Designsystem:**
 - Rubriker: Playfair Display 400 via Google Fonts — **aldrig fet**, gärna
   stor skala och kursiv betoning på enstaka ord
 - Brödtext/UI: Public Sans 300
-- Palett: bakgrund `#fdf9f7`, text `#3e342e`, salvia `#ccd5ae`,
-  dammrosa `#dfaab0`, blekblå `#e4ecf1`
-- Knappar: tunna outline-piller (1px, radius 300px), fylls mörka vid hover
+- Palett (egen — INTE Beata-pastellerna, inget brunt): bakgrund `#fbfaf7`,
+  ink-text `#21353c`, djup teal `#274e53`, ljus teal `#d8e6e3`,
+  guld `#f0e3c0`, himmelsblå `#dce4f0`
+- Knappar: tunna outline-piller (1px, radius 300px), fylls teal vid hover
 - Layout: asymmetri (stor rubrik vänster + färgblock höger), fullbreda
-  pastellsektioner, stora fristående citat
+  färgsektioner, stora fristående citat
 - Motion: fade/lyft vid scroll (0.6s ease, IntersectionObserver i main.js),
   respektera prefers-reduced-motion
 
-Text markerad med `<mark class="platshallare">` (gul markering på sidan) är
-platshållare som ska bytas mot riktigt innehåll — ta bort mark-taggen när
-texten är riktig. Kvar att fylla i: Ingrids bakgrund/erfarenhet, priser
-och upplägg, mejladress, telefonnummer.
+Text markerad med `<mark class="platshallare">` är platshållare som ska
+bytas mot riktigt innehåll. Just nu finns inga kvar — allt innehåll är
+ifyllt med riktiga uppgifter.
 
 ## Teknik
 
