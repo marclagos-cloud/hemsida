@@ -32,6 +32,10 @@ barnet är ett problem som ska fixas. Regler:
   initiativ; ABA-kritiken bemöts öppet och ärligt (se #approach-sektionen)
 - I övrigt: varmt, lugnt, konkret. Ingen säljighet, inga överdrivna löften
 
+**Mobilen först:** majoriteten av trafiken är mobil. Granska varje ändring
+i 390px-vy innan den pushas — mobilanpassningarna ligger samlade i en
+media query (`max-width: 44rem`) längst ned i `css/style.css`.
+
 **Designsystem:**
 - Rubriker: Playfair Display 400 via Google Fonts — **aldrig fet**, gärna
   stor skala och kursiv betoning på enstaka ord

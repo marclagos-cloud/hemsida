@@ -27,6 +27,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
 }
 
 body {
@@ -126,6 +127,7 @@ strong {
   text-decoration: none;
   padding: 0.65rem 1.8rem;
   border-radius: 300px;
+  white-space: nowrap;
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
@@ -263,12 +265,96 @@ strong {
   letter-spacing: 0.05em;
 }
 
+/* ==================================================
+   Mobil — majoriteten av trafiken. Testa alltid här.
+   ================================================== */
+
 @media (max-width: 44rem) {
+  /* Header: en rad — logga + boka-knapp, textlänkarna göms */
+  .site-header {
+    flex-wrap: nowrap;
+    padding: 0.85rem 1.25rem;
+  }
+  .site-header nav a:not(.knapp-liten) {
+    display: none;
+  }
+
+  html {
+    scroll-padding-top: 4rem;
+  }
+
+  /* Hero: mindre rubrik, naturlig radbrytning, tightare yta */
+  .hero {
+    min-height: 70vh;
+    padding: 4.5rem 1.25rem;
+  }
+  .hero h1 {
+    font-size: 2.15rem;
+  }
+  .hero h1 br {
+    display: none;
+  }
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  /* Sektioner: mobilanpassad luft */
+  .sektion {
+    padding: 3.5rem 1.25rem;
+  }
+  .sektion h2 {
+    font-size: 1.9rem;
+  }
+
+  #approach {
+    margin-inline: 1rem;
+    padding: 2.75rem 1.5rem;
+  }
+
   .tjanster {
     grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3.5rem 1.25rem;
   }
   .tjanster-rubrik {
     position: static;
+  }
+  .tjanster-rubrik h2 {
+    font-size: 2.4rem;
+  }
+  .block {
+    padding: 1.75rem 1.4rem;
+  }
+  .block h3 {
+    font-size: 1.45rem;
+  }
+
+  .steg {
+    gap: 1rem;
+  }
+  .steg li {
+    padding: 1.4rem 1.25rem 1.4rem 4rem;
+  }
+  .steg li::before {
+    left: 1.2rem;
+    top: 1.55rem;
+    font-size: 1.5rem;
+  }
+
+  .fortroende-inre {
+    padding: 3rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .citat blockquote {
+    font-size: 1.65rem;
+  }
+  .citat .attribution {
+    margin-top: 1.25rem;
+  }
+
+  .slut-cta {
+    padding: 4rem 1.25rem;
   }
 }
 
