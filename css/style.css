@@ -272,27 +272,42 @@ strong {
   }
 }
 
-/* --- Så går det till (numrerade steg) --- */
+/* --- About ABA: panel med färg runt texten --- */
+
+#approach {
+  background: var(--himmel);
+  max-width: 62rem;
+  padding: 4.5rem clamp(2rem, 6vw, 5.5rem);
+}
+
+/* --- How it works: kort i 2x2-rutnät --- */
+
+#how-it-works {
+  max-width: 64rem;
+}
 
 .steg {
   list-style: none;
   counter-reset: steg;
   margin-top: 2rem;
   display: grid;
-  gap: 2.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
 }
 
 .steg li {
   counter-increment: steg;
   position: relative;
-  padding-left: 4.5rem;
+  background: #fffdf9;
+  border: 1px solid var(--kant);
+  padding: 2rem 2rem 2rem 5.2rem;
 }
 
 .steg li::before {
   content: counter(steg, decimal-leading-zero);
   position: absolute;
-  left: 0;
-  top: 0.15rem;
+  left: 1.9rem;
+  top: 2.15rem;
   font-family: var(--serif);
   font-size: 1.9rem;
   line-height: 1;
@@ -304,11 +319,11 @@ strong {
   margin-bottom: 0.35rem;
 }
 
-/* --- Förtroendepelare (mörk sektion) --- */
+/* --- Förtroendepelare (ljus teal-band) --- */
 
 .fortroende {
-  background: var(--teal-mork);
-  color: var(--bg);
+  background: var(--teal);
+  color: var(--text);
 }
 
 .fortroende-inre {
@@ -324,7 +339,7 @@ strong {
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.72rem;
-  color: #d3c18a;
+  color: #48767c;
   margin-bottom: 0.6rem;
 }
 
@@ -334,7 +349,7 @@ strong {
 }
 
 .pelare p:last-child {
-  color: #c3d4d2;
+  color: var(--dov);
   font-size: 0.92rem;
 }
 
