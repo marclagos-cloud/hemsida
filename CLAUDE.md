@@ -6,14 +6,23 @@ skriv beslut och konventioner här så jobbar båda likadant.
 
 ## Vad sidan är
 
-Hemsida för hennes verksamhet inom **hälsa/välmående**. Stilen ska vara
-**varm & personlig** — mjuka färger, serif, ombonat. Inte prestations- eller
-säljigt tonläge.
+Hemsida för **Ingrid Shragges verksamhet**: individuell beteendeterapi
+(ABA) för barn med autism i Stockholmsområdet, samt föräldracoaching.
+Ingrid är certifierad beteendeanalytiker (BCBA). Varumärket är hennes
+eget namn.
 
-**"Studio Balans" är ett platshållarnamn** tills det riktiga namnet är bestämt.
+**Målgrupp och ton:** föräldrar till barn med autism. Allt på sidan ska
+bygga **förtroende** — varmt, lugnt och konkret språk. Ingen säljighet,
+ingen onödig fackjargong, inga överdrivna löften. Betona: individuell
+anpassning efter barnet och familjen, vetenskapligt grundade metoder,
+kostnadsfritt första samtal som lågtröskel-ingång.
+
+Stilen är **varm & personlig** — mjuka färger, serif, ombonat.
+
 Text markerad med `<mark class="platshallare">` (gul markering på sidan) är
 platshållare som ska bytas mot riktigt innehåll — ta bort mark-taggen när
-texten är riktig.
+texten är riktig. Kvar att fylla i: Ingrids bakgrund/erfarenhet, priser
+och upplägg, mejladress, telefonnummer.
 
 ## Teknik
 
