@@ -6,7 +6,14 @@ skriv beslut och konventioner här så jobbar båda likadant.
 
 ## Vad sidan är
 
-(Fyll i! T.ex. "portfolio för X" eller "blogg om Y".)
+Hemsida för hennes verksamhet inom **hälsa/välmående**. Stilen ska vara
+**varm & personlig** — mjuka färger, serif, ombonat. Inte prestations- eller
+säljigt tonläge.
+
+**"Studio Balans" är ett platshållarnamn** tills det riktiga namnet är bestämt.
+Text markerad med `<mark class="platshallare">` (gul markering på sidan) är
+platshållare som ska bytas mot riktigt innehåll — ta bort mark-taggen när
+texten är riktig.
 
 ## Teknik
 

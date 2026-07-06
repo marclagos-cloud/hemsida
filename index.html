@@ -3,43 +3,88 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hemsidan</title>
-  <meta name="description" content="En hemsida under uppbyggnad.">
+  <title>Studio Balans — hälsa &amp; välmående</title>
+  <meta name="description" content="Personlig vägledning inom hälsa och välmående. Boka en tid idag.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header class="site-header">
-    <a class="logo" href="index.html">Hemsidan</a>
+    <a class="logo" href="index.html">Studio Balans</a>
     <nav>
-      <a href="#om">Om</a>
+      <a href="#om">Om mig</a>
+      <a href="#tjanster">Tjänster</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <h1>Hej, världen!</h1>
-      <p>Den här sidan är under uppbyggnad — byggd av oss två, med lite hjälp av Claude.</p>
-      <a class="knapp" href="#om">Läs mer</a>
+      <p class="overrubrik">Hälsa &amp; välmående</p>
+      <h1>Andas ut. Du är framme.</h1>
+      <p>
+        Här får du stanna upp, landa och ta hand om dig själv —
+        i din egen takt, med stöd hela vägen.
+      </p>
+      <a class="knapp" href="#kontakt">Boka en tid</a>
     </section>
 
     <section id="om" class="sektion">
-      <h2>Om</h2>
+      <h2>Om mig</h2>
       <p>
-        Här kommer det snart stå något fint. Byt ut den här texten mot vad sidan
-        faktiskt ska handla om — en portfolio, en blogg, ett projekt.
+        Hej! Jag heter <mark class="platshallare">[namn]</mark> och jag hjälper
+        människor att må bättre i både kropp och sinne. Min väg hit började med
+        <mark class="platshallare">[hennes bakgrund — varför hon brinner för det här]</mark>,
+        och idag är det här mitt allra största varför.
+      </p>
+      <p>
+        Hos mig är inget prestationsinriktat. Vi utgår från där du är,
+        och bygger därifrån.
       </p>
     </section>
 
+    <section id="tjanster" class="sektion">
+      <h2>Tjänster</h2>
+      <div class="kort-rad">
+        <article class="kort">
+          <h3>Enskild session</h3>
+          <p>En stund som bara är din. Vi jobbar en-till-en utifrån dina behov och mål.</p>
+          <p class="pris">60 min · <mark class="platshallare">[pris]</mark> kr</p>
+        </article>
+        <article class="kort">
+          <h3>Litet gruppformat</h3>
+          <p>Träffas i liten grupp med plats för både gemenskap och personligt utrymme.</p>
+          <p class="pris">75 min · <mark class="platshallare">[pris]</mark> kr</p>
+        </article>
+        <article class="kort">
+          <h3>Paket &amp; program</h3>
+          <p>För dig som vill ha en längre resa — flera tillfällen med en tydlig röd tråd.</p>
+          <p class="pris">Från <mark class="platshallare">[pris]</mark> kr</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="sektion citat">
+      <blockquote>
+        ”<mark class="platshallare">[Ett fint citat från en nöjd kund — eller hennes egen filosofi i en mening.]</mark>”
+      </blockquote>
+    </section>
+
     <section id="kontakt" class="sektion">
-      <h2>Kontakt</h2>
-      <p>Skriv gärna: <a href="mailto:hej@example.com">hej@example.com</a></p>
+      <h2>Boka eller hör av dig</h2>
+      <p>
+        Nyfiken? Skicka ett meddelande så hittar vi en tid som passar dig.
+      </p>
+      <p class="kontakt-rader">
+        ✉️ <a href="mailto:hej@example.com"><mark class="platshallare">[mejladress]</mark></a><br>
+        📍 <mark class="platshallare">[ort/plats]</mark><br>
+        📷 <a href="#"><mark class="platshallare">[@instagram]</mark></a>
+      </p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 · Byggd med kärlek</p>
+    <p>© 2026 Studio Balans</p>
   </footer>
 
   <script src="js/main.js"></script>

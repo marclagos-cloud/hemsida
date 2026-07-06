@@ -5,11 +5,12 @@
 :root {
   --bg: #faf7f2;
   --text: #2b2a28;
+  --dov: #5a564f;
   --accent: #b5654d;
   --accent-mork: #94503d;
   --yta: #ffffff;
   --kant: #e7e0d6;
-  --max-bredd: 42rem;
+  --max-bredd: 46rem;
 }
 
 * {
@@ -29,12 +30,21 @@ body {
   line-height: 1.7;
 }
 
+/* Platshållare: text som ska bytas ut mot riktigt innehåll */
+.platshallare {
+  background: #f3e3b8;
+  border-radius: 3px;
+  padding: 0 0.2em;
+}
+
 /* --- Header --- */
 
 .site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   max-width: var(--max-bredd);
   margin: 0 auto;
   padding: 1.25rem 1.5rem;
@@ -67,6 +77,14 @@ body {
   text-align: center;
 }
 
+.overrubrik {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.8rem;
+  color: var(--accent-mork);
+  margin-bottom: 1rem;
+}
+
 .hero h1 {
   font-size: clamp(2.2rem, 6vw, 3.5rem);
   margin-bottom: 1rem;
@@ -74,7 +92,7 @@ body {
 
 .hero p {
   font-size: 1.15rem;
-  color: #5a564f;
+  color: var(--dov);
   max-width: 32rem;
   margin: 0 auto 2rem;
 }
@@ -98,16 +116,64 @@ body {
 .sektion {
   max-width: var(--max-bredd);
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 3.5rem 1.5rem;
   border-top: 1px solid var(--kant);
 }
 
 .sektion h2 {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.sektion p + p {
+  margin-top: 0.75rem;
 }
 
 .sektion a {
   color: var(--accent-mork);
+}
+
+/* --- Tjänstekort --- */
+
+.kort-rad {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.kort {
+  background: var(--yta);
+  border: 1px solid var(--kant);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.kort h3 {
+  margin-bottom: 0.5rem;
+}
+
+.kort .pris {
+  margin-top: 1rem;
+  color: var(--accent-mork);
+  font-size: 0.95rem;
+}
+
+/* --- Citat --- */
+
+.citat blockquote {
+  font-size: 1.3rem;
+  font-style: italic;
+  text-align: center;
+  color: var(--dov);
+  max-width: 34rem;
+  margin: 0 auto;
+}
+
+/* --- Kontakt --- */
+
+.kontakt-rader {
+  margin-top: 1rem;
+  line-height: 2.2;
 }
 
 /* --- Footer --- */
