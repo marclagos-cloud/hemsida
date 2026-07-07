@@ -211,7 +211,7 @@ strong {
 
 .bild {
   max-width: 64rem;
-  margin: 0 auto 5.5rem;
+  margin: 5.5rem auto;
   padding: 0 1.5rem;
 }
 
@@ -221,6 +221,7 @@ strong {
   height: auto; /* släpper höjd-attributet så aspect-ratio får styra */
   aspect-ratio: 21 / 9;
   object-fit: cover;
+  object-position: 50% 72%; /* kritlådan och händerna i fokus */
   border-radius: 22px;
 }
 
@@ -290,7 +291,7 @@ strong {
   }
 
   .bild {
-    margin-bottom: 3.5rem;
+    margin: 3.5rem auto;
     padding: 0 1.25rem;
   }
   .bild img {

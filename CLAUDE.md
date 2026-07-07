@@ -32,6 +32,9 @@ barnet är ett problem som ska fixas. Regler:
   initiativ; ABA-kritiken bemöts öppet men kort, inuti "How I work" —
   **inte** som egen sektion som leder med kritiken (kompis-feedback 7 juli)
 - I övrigt: varmt, lugnt, konkret. Ingen säljighet, inga överdrivna löften
+- **Inga tankstreck (—) i copyn** — Marc tycker det ser AI-genererat ut
+  (7 juli, hela sidan rensades). Skriv om med komma, kolon, punkt eller
+  parentes i stället. Gäller även rubriker
 
 **Mobilen först:** majoriteten av trafiken är mobil. Granska varje ändring
 i 390px-vy innan den pushas — mobilanpassningarna ligger samlade i en
