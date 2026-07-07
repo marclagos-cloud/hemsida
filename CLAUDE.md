@@ -101,6 +101,10 @@ ifyllt med riktiga uppgifter.
 ## Struktur
 
 - `index.html` — startsidan. Nya sidor läggs som egna html-filer i roten.
+- `what-is-aba.html` — "What is ABA?", FAQ-guide för föräldrar som inte
+  vet vad ABA är (kompis-feedback). Nås via pillerknappen i How I work.
+  OBS: gör konkreta ställningstaganden i Ingrids namn (t.ex. "I don't
+  train eye contact") — Ingrid bör läsa igenom, väntar på hennes review.
 - `css/style.css` — all stil samlad i en fil.
 - `js/main.js` — javascript, bara om det behövs.
 
