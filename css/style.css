@@ -158,24 +158,27 @@ strong {
   margin-bottom: 1.25rem;
 }
 
-/* --- Hero --- */
+/* --- Hero: text vänster, foto i mjuk båge höger --- */
 
 .hero {
   background: var(--teal);
-  min-height: 78vh;
+  min-height: 72vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 5rem 1.5rem;
+  padding: clamp(4rem, 9vh, 6rem) clamp(1.5rem, 5vw, 4rem);
 }
 
 .hero-inre {
-  max-width: 52rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  align-items: center;
+  gap: clamp(2.5rem, 6vw, 5.5rem);
 }
 
 .hero h1 {
-  font-size: clamp(2.6rem, 7vw, 4.8rem);
+  font-size: clamp(2.6rem, 5.5vw, 4.4rem);
   margin-bottom: 1.5rem;
 }
 
@@ -187,7 +190,38 @@ strong {
   font-size: 1.1rem;
   color: var(--dov);
   max-width: 33rem;
-  margin: 0 auto 2.25rem;
+  margin: 0 0 2.25rem;
+}
+
+/* Fotot: bågform upptill — samma formspråk som pillerknapparna */
+.hero-bild {
+  width: 100%;
+  max-width: 26rem;
+  height: auto; /* släpper höjd-attributet så aspect-ratio får styra */
+  justify-self: end;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 300px 300px 18px 18px;
+}
+
+/* Croppen styrs per foto så motivet hamnar i bågen */
+.hero-bild-beads { object-position: 50% 22%; }
+
+/* --- Bildband: brett foto med rundade hörn --- */
+
+.bild {
+  max-width: 64rem;
+  margin: 0 auto 5.5rem;
+  padding: 0 1.5rem;
+}
+
+.bild img {
+  display: block;
+  width: 100%;
+  height: auto; /* släpper höjd-attributet så aspect-ratio får styra */
+  aspect-ratio: 21 / 9;
+  object-fit: cover;
+  border-radius: 22px;
 }
 
 /* --- Sektioner --- */
@@ -283,10 +317,15 @@ strong {
     scroll-padding-top: 4rem;
   }
 
-  /* Hero: mindre rubrik, naturlig radbrytning, tightare yta */
+  /* Hero: text centrerad, fotot i båge under */
   .hero {
-    min-height: 66vh;
-    padding: 4rem 1.25rem;
+    min-height: 0;
+    padding: 3.5rem 1.25rem 4rem;
+    text-align: center;
+  }
+  .hero-inre {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
   .hero h1 {
     font-size: 2.15rem;
@@ -296,6 +335,26 @@ strong {
   }
   .hero-text {
     font-size: 1rem;
+    margin: 0 auto 2rem;
+  }
+  .hero-bild {
+    max-width: min(19rem, 80vw);
+    justify-self: center;
+    border-radius: 170px 170px 14px 14px;
+  }
+
+  .bild {
+    margin-bottom: 3.5rem;
+    padding: 0 1.25rem;
+  }
+  .bild img {
+    aspect-ratio: 4 / 3;
+    border-radius: 16px;
+  }
+
+  .citat-bild {
+    width: 7.5rem;
+    margin-bottom: 1.5rem;
   }
 
 
@@ -444,6 +503,14 @@ strong {
 
 .citat {
   max-width: 60rem;
+}
+
+/* Handavtrycken: vit bakgrund smälter in i sidfärgen via multiply */
+.citat-bild {
+  width: 9.5rem;
+  height: auto;
+  margin-bottom: 2rem;
+  mix-blend-mode: multiply;
 }
 
 .citat blockquote {

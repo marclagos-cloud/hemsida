@@ -38,11 +38,21 @@ media query (`max-width: 44rem`) längst ned i `css/style.css`.
 **Håll texterna korta** — Marc tyckte sidan blev för lång på mobil; rytmen
 är "lite copy, sen en bild" (`figure.bild`-band mellan sektioner).
 
-**Bilder:** första försöket (foto-hero + bildband, 6 juli) revertades —
-Marc tyckte det blev dåligt; nytt försök planerat. Kandidater (Unsplash,
-ingen attribution krävs) ligger i `~/Desktop/stock bilder kids/`. Vid nästa
-försök: komprimera med sips till 1400–1800 px jpeg ~75, inga synliga
-ansikten, och stäm av utseendet med Marc innan push.
+**Bilder** (på plats sedan 7 juli, Marc valde ur tre varianter):
+- Hero: `img/hero-beads.jpg` (vattenpärlor) i en **bågform** (`.hero-bild`,
+  radie 300px upptill — samma formspråk som pillerknapparna), till höger om
+  rubriken på desktop, under texten på mobil
+- Bildband `img/reading.jpg` efter How it works, handavtrycken
+  `img/handprints.jpg` ovanför citatet (vit bakgrund smälter in via
+  `mix-blend-mode: multiply`)
+- Lärdom från skrotade försöket 6 juli: inga mörka overlays på foton, inga
+  platta fullbreddsband — rundade former och ljus bakgrund
+- OBS: `height: auto` krävs på img-klasserna, annars vinner höjd-attributet
+  över CSS `aspect-ratio`
+- Fler kandidater (Unsplash, ingen attribution krävs) ligger i
+  `~/Desktop/stock bilder kids/`. Regler för nya bilder: komprimera med sips
+  till 1400–1800 px jpeg ~75, inga synliga ansikten, stäm av med Marc innan
+  push. Croppen i bågen styrs per bild med en `object-position`-klass.
 
 **Designsystem:**
 - Rubriker: Playfair Display 400 via Google Fonts — **aldrig fet**, gärna
