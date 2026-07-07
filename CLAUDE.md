@@ -52,15 +52,24 @@ media query (`max-width: 44rem`) längst ned i `css/style.css`.
 - ABA ska förklaras enkelt (vad det är, hur det ser ut i praktiken), inte
   bara försvaras
 
-**Bilder** (på plats sedan 7 juli, Marc valde ur tre varianter):
-- Hero: `img/hero-beads.jpg` (vattenpärlor) i en **bågform** (`.hero-bild`,
-  radie 300px upptill — samma formspråk som pillerknapparna), till höger om
-  rubriken på desktop, under texten på mobil
-- Bildband `img/reading.jpg` efter How I work, handavtrycken
-  `img/handprints.jpg` överst i kontaktsektionen (vit bakgrund smälter in
-  i guldet via `mix-blend-mode: multiply`)
-- **Saknas: foto på Ingrid** — kompisen efterlyste det, Marc har inga bra
-  bilder just nu. Läggs in när det finns (trolig plats: About me)
+**Bilder** (läget 7 juli kväll):
+- Hero: `img/hero-painting.jpg` (ett barns vattenfärgsblommor) i rundat
+  kort (`.hero-bild`, 22px radie, lätt rotation, skugga). PLATSHÅLLARE
+  tills det finns ett foto på Ingrid i lek med ett barn; fotobrief finns
+  på Marcs skrivbord (`fotobrief-ingrid.txt`)
+- Bildband `img/rock-painting.jpg` (barnhänder målar stenar) efter How I
+  work, handavtrycken `img/handprints.jpg` överst i kontaktsektionen (vit
+  bakgrund smälter in i guldet via `mix-blend-mode: multiply`)
+- **Bildprincip (7/7):** stockfoton på BARN läses som Ingrids klienter,
+  mångfald är bra och önskvärd där. Men en person som kan läsas som VUXEN
+  läses som Ingrid själv och måste likna henne (vit). Kritbilden byttes
+  av det skälet (vuxenarm i bild)
+- **Förslag under beslut hos Marc (pausat 7/7):** typografisk hero (ingen
+  bild, guldsvep under kursiven) + bildbandet slopat helt; ligger som
+  `_preview-typo.html` lokalt hos Marc, ej committat. Skäl: stockbilder
+  fastnar på 6-7 av 10, riktiga foton eller ren typografi är vägen till 10
+- **Saknas: foto på Ingrid** (lek med barn till heron + porträtt till
+  About me), se fotobriefen
 - Favicon (`img/favicon.svg` + PNG-fallbacks) och OG-bild
   (`img/og-image.jpg`, genereras från skärmdump av ett HTML-kort) finns.
   **Vid domänbyte:** uppdatera de absoluta `og:url`/`og:image`-URL:erna
@@ -127,7 +136,12 @@ säger bl.a.:
   css/style.css eller js/main.js: **bumpa `?v=`-numret i ALLA html-filer**,
   annars kan besökare få ny HTML mot gammal CSS (trasig layout).
 - Färger och typsnitt styrs av CSS-variablerna längst upp i `css/style.css`.
-- All text på sidan är på svenska.
+- **CSS-ordning:** mobilanpassningarna ligger i EN media query LÄNGST NED
+  i `css/style.css`, och den ska förbli sist i filen. Nya sektioner läggs
+  FÖRE den. Annars vinner desktop-reglerna på mobilen eftersom senare
+  regler slår tidigare vid samma specificitet (hände 7/7: stegen fick
+  desktop-padding och 20rem-kort som stack ut ur containern).
+- All text på sidan är på engelska (se tonreglerna ovan).
 
 ## Struktur
 
