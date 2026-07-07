@@ -1,0 +1,508 @@
+/* ==================================================
+   Designsystem
+   Rubriker: Playfair Display 400 (aldrig fet)
+   Brödtext: Public Sans 300
+   Egen palett: ink + teal + guld + himmelsblå
+   ================================================== */
+
+:root {
+  --bg: #fbfaf7;
+  --text: #21353c;
+  --dov: #5c6f75;
+  --teal-mork: #274e53;
+  --teal: #d8e6e3;
+  --guld: #f0e3c0;
+  --himmel: #dce4f0;
+  --kant: #e3e5e0;
+  --serif: "Playfair Display", Georgia, serif;
+  --sans: "Public Sans", -apple-system, "Helvetica Neue", sans-serif;
+  --max-bredd: 46rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+}
+
+body {
+  font-family: var(--sans);
+  font-weight: 300;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .logo, .pelare-stor {
+  font-family: var(--serif);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Platshållare: text som ska bytas ut mot riktigt innehåll */
+.platshallare {
+  background: #fbdfc7;
+  border-radius: 3px;
+  padding: 0 0.2em;
+}
+
+/* --- Mjuk intoning vid scroll (js lägger på .reveal/.syns) --- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.syns {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* --- Header --- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1.1rem clamp(1.5rem, 5vw, 4rem);
+  background: rgba(251, 250, 247, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 1.35rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-header nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-header nav a {
+  font-size: 0.95rem;
+  color: var(--text);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.site-header nav a:hover {
+  border-bottom-color: var(--text);
+}
+
+/* --- Knappar: tunna outline-piller --- */
+
+.knapp {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--text);
+  text-decoration: none;
+  padding: 0.65rem 1.8rem;
+  border-radius: 300px;
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.knapp:hover {
+  background: var(--teal-mork);
+  border-color: var(--teal-mork);
+  color: var(--bg);
+  transform: translateY(-1px);
+}
+
+.knapp-liten {
+  padding: 0.35rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+.site-header nav a.knapp-liten {
+  border-bottom: none;
+  border: 1px solid var(--text);
+}
+
+/* --- Kicker (små versala etiketter) --- */
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  color: #48767c;
+  margin-bottom: 1.25rem;
+}
+
+/* --- Hero: text vänster, foto i mjuk båge höger --- */
+
+.hero {
+  background: var(--teal);
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+  padding: clamp(4rem, 9vh, 6rem) clamp(1.5rem, 5vw, 4rem);
+}
+
+.hero-inre {
+  max-width: 72rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  align-items: center;
+  gap: clamp(2.5rem, 6vw, 5.5rem);
+}
+
+.hero h1 {
+  font-size: clamp(2.6rem, 5.5vw, 4.4rem);
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 em {
+  font-style: italic;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  color: var(--dov);
+  max-width: 33rem;
+  margin: 0 0 2.25rem;
+}
+
+/* Fotot: bågform upptill — samma formspråk som pillerknapparna */
+.hero-bild {
+  width: 100%;
+  max-width: 26rem;
+  height: auto; /* släpper höjd-attributet så aspect-ratio får styra */
+  justify-self: end;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 300px 300px 18px 18px;
+}
+
+/* Croppen styrs per foto så motivet hamnar i bågen */
+.hero-bild-beads { object-position: 50% 22%; }
+
+/* --- Bildband: brett foto med rundade hörn --- */
+
+.bild {
+  max-width: 64rem;
+  margin: 5.5rem auto;
+  padding: 0 1.5rem;
+}
+
+.bild img {
+  display: block;
+  width: 100%;
+  height: auto; /* släpper höjd-attributet så aspect-ratio får styra */
+  aspect-ratio: 21 / 9;
+  object-fit: cover;
+  object-position: 50% 72%; /* kritlådan och händerna i fokus */
+  border-radius: 22px;
+}
+
+/* --- Sektioner --- */
+
+.sektion {
+  max-width: var(--max-bredd);
+  margin: 0 auto;
+  padding: 5.5rem 1.5rem;
+}
+
+.sektion h2 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  margin-bottom: 1.5rem;
+}
+
+.sektion p + p {
+  margin-top: 1rem;
+}
+
+.sektion a {
+  color: var(--text);
+}
+
+/* ==================================================
+   Mobil — majoriteten av trafiken. Testa alltid här.
+   ================================================== */
+
+@media (max-width: 44rem) {
+  /* Header: en rad — logga + boka-knapp, textlänkarna göms */
+  .site-header {
+    flex-wrap: nowrap;
+    padding: 0.85rem 1.25rem;
+  }
+  .site-header nav a:not(.knapp-liten) {
+    display: none;
+  }
+
+  html {
+    scroll-padding-top: 4rem;
+  }
+
+  /* Hero: text centrerad, fotot i båge under */
+  .hero {
+    min-height: 0;
+    padding: 3.5rem 1.25rem 4rem;
+    text-align: center;
+  }
+  .hero-inre {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .hero h1 {
+    font-size: 2.15rem;
+  }
+  .hero h1 br {
+    display: none;
+  }
+  .hero-text {
+    font-size: 1rem;
+    margin: 0 auto 2rem;
+  }
+  .hero-bild {
+    max-width: min(19rem, 80vw);
+    justify-self: center;
+    border-radius: 170px 170px 14px 14px;
+  }
+
+  .bild {
+    margin: 3.5rem auto;
+    padding: 0 1.25rem;
+  }
+
+  .aba-banner {
+    padding: 0 1.25rem 3.5rem;
+  }
+  .bild img {
+    aspect-ratio: 4 / 3;
+    border-radius: 16px;
+  }
+
+  /* Sektioner: mobilanpassad luft */
+  .sektion {
+    padding: 3.5rem 1.25rem;
+  }
+  .sektion h2 {
+    font-size: 1.9rem;
+  }
+
+  #how-i-work {
+    margin-inline: 1rem;
+    padding: 2.75rem 1.5rem;
+  }
+
+  .steg {
+    gap: 1rem;
+  }
+  .steg li {
+    padding: 1.4rem 1.25rem 1.4rem 4rem;
+  }
+  .steg li::before {
+    left: 1.2rem;
+    top: 1.55rem;
+    font-size: 1.5rem;
+  }
+
+  .fortroende-inre {
+    padding: 3rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .slut-cta {
+    padding: 4rem 1.25rem;
+  }
+  .kontakt-bild {
+    width: 7rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* --- "New to ABA?"-strip mellan bildbandet och förtroendebandet --- */
+
+.aba-banner {
+  max-width: var(--max-bredd);
+  margin: 0 auto;
+  padding: 0 1.5rem 5.5rem;
+  text-align: center;
+}
+
+.aba-banner p:not(.kicker) {
+  color: var(--dov);
+  max-width: 28rem;
+  margin: 0 auto 1.9rem;
+}
+
+/* --- Undersidor (t.ex. What is ABA?) --- */
+
+.undersida-hero {
+  padding-bottom: 0;
+}
+
+.undersida-hero h1 {
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  margin-bottom: 1.5rem;
+}
+
+.fragor h2 {
+  font-size: 1.6rem;
+  margin: 3.25rem 0 0.9rem;
+}
+
+.fragor h2:first-child {
+  margin-top: 0;
+}
+
+/* --- How I work: panel med färg runt texten, stegen sist --- */
+
+#how-i-work {
+  background: var(--himmel);
+  max-width: 62rem;
+  padding: 4.5rem clamp(2rem, 6vw, 5.5rem);
+}
+
+.steg-kicker {
+  margin-top: 3.25rem;
+}
+
+.steg {
+  list-style: none;
+  counter-reset: steg;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+}
+
+.steg li {
+  counter-increment: steg;
+  position: relative;
+  background: #fffdf9;
+  border: 1px solid var(--kant);
+  padding: 2rem 2rem 2rem 5.2rem;
+}
+
+.steg li::before {
+  content: counter(steg, decimal-leading-zero);
+  position: absolute;
+  left: 1.9rem;
+  top: 2.15rem;
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  line-height: 1;
+  color: var(--dov);
+}
+
+.steg h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.35rem;
+}
+
+/* --- Förtroendepelare (ljus teal-band) --- */
+
+.fortroende {
+  background: var(--teal);
+  color: var(--text);
+}
+
+.fortroende-inre {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 4.5rem clamp(1.5rem, 5vw, 4rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2.5rem;
+}
+
+.pelare-rubrik {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  color: #48767c;
+  margin-bottom: 0.6rem;
+}
+
+.pelare-stor {
+  font-size: 1.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.pelare p:last-child {
+  color: var(--dov);
+  font-size: 0.92rem;
+}
+
+/* --- Slut-CTA (guldblock) --- */
+
+.slut-cta {
+  background: var(--guld);
+  text-align: center;
+  padding: 6rem 1.5rem;
+}
+
+.slut-cta-inre {
+  max-width: var(--max-bredd);
+  margin: 0 auto;
+}
+
+/* Handavtrycken: vit bakgrund smälter in i guldet via multiply */
+.kontakt-bild {
+  display: block;
+  width: 9rem;
+  height: auto;
+  margin: 0 auto 1.75rem;
+  mix-blend-mode: multiply;
+}
+
+.slut-cta h2 {
+  font-size: clamp(2.1rem, 5vw, 3.2rem);
+  margin-bottom: 1.25rem;
+}
+
+.slut-cta-inre > p {
+  max-width: 30rem;
+  margin: 0 auto 2.25rem;
+}
+
+.slut-cta a {
+  color: var(--text);
+}
+
+.kontakt-rader {
+  margin-top: 2.5rem;
+  line-height: 2.3;
+  font-size: 0.95rem;
+}
+
+/* --- Footer --- */
+
+.site-footer {
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  color: var(--dov);
+  font-size: 0.85rem;
+}

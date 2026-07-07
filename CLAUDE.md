@@ -132,6 +132,9 @@ säger bl.a.:
 ## Struktur
 
 - `index.html` — startsidan. Nya sidor läggs som egna html-filer i roten.
+- `v1/` — **frusen ögonblicksbild av sajten 7 juli 2026** (Marc delade den
+  med sin handledare för feedback). Rör den inte; tas bort när feedbacken
+  är inhämtad. Har `noindex` så Google inte ser dubblettinnehåll.
 - `what-is-aba.html` — "What is ABA?", FAQ-guide för föräldrar som inte
   vet vad ABA är (kompis-feedback). Nås via pillerknappen i How I work.
   OBS: gör konkreta ställningstaganden i Ingrids namn (t.ex. "I don't
