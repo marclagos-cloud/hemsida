@@ -158,7 +158,7 @@ strong {
   margin-bottom: 1.25rem;
 }
 
-/* --- Hero: text vänster, foto i mjuk båge höger --- */
+/* --- Hero: text vänster, bild i rundat kort höger --- */
 
 .hero {
   background: var(--teal);
@@ -172,7 +172,7 @@ strong {
   max-width: 72rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  grid-template-columns: minmax(0, 6fr) minmax(0, 6fr);
   align-items: center;
   gap: clamp(2.5rem, 6vw, 5.5rem);
 }
@@ -193,19 +193,23 @@ strong {
   margin: 0 0 2.25rem;
 }
 
-/* Fotot: bågform upptill — samma formspråk som pillerknapparna */
+/* Bilden: rundat kort med lätt lutning, som en teckning på kylskåpet.
+   Platshållare tills det finns ett foto på Ingrid i lek med ett barn. */
 .hero-bild {
   width: 100%;
-  max-width: 26rem;
+  max-width: 30rem;
   height: auto; /* släpper höjd-attributet så aspect-ratio får styra */
   justify-self: end;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
-  border-radius: 300px 300px 18px 18px;
+  border-radius: 22px;
+  transform: rotate(-2deg);
+  background: #fff;
+  box-shadow: 0 24px 48px rgba(33, 53, 60, 0.14);
 }
 
-/* Croppen styrs per foto så motivet hamnar i bågen */
-.hero-bild-beads { object-position: 50% 22%; }
+/* Croppen styrs per foto så motivet hamnar rätt i kortet */
+.hero-bild-blommor { object-position: 50% 68%; }
 
 /* --- Bildband: brett foto med rundade hörn --- */
 
@@ -244,102 +248,6 @@ strong {
 
 .sektion a {
   color: var(--text);
-}
-
-/* ==================================================
-   Mobil — majoriteten av trafiken. Testa alltid här.
-   ================================================== */
-
-@media (max-width: 44rem) {
-  /* Header: en rad — logga + boka-knapp, textlänkarna göms */
-  .site-header {
-    flex-wrap: nowrap;
-    padding: 0.85rem 1.25rem;
-  }
-  .site-header nav a:not(.knapp-liten) {
-    display: none;
-  }
-
-  html {
-    scroll-padding-top: 4rem;
-  }
-
-  /* Hero: text centrerad, fotot i båge under */
-  .hero {
-    min-height: 0;
-    padding: 3.5rem 1.25rem 4rem;
-    text-align: center;
-  }
-  .hero-inre {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-  .hero h1 {
-    font-size: 2.15rem;
-  }
-  .hero h1 br {
-    display: none;
-  }
-  .hero-text {
-    font-size: 1rem;
-    margin: 0 auto 2rem;
-  }
-  .hero-bild {
-    max-width: min(19rem, 80vw);
-    justify-self: center;
-    border-radius: 170px 170px 14px 14px;
-  }
-
-  .bild {
-    margin: 3.5rem auto;
-    padding: 0 1.25rem;
-  }
-
-  .aba-banner {
-    padding: 0 1.25rem 3.5rem;
-  }
-  .bild img {
-    aspect-ratio: 4 / 3;
-    border-radius: 16px;
-  }
-
-  /* Sektioner: mobilanpassad luft */
-  .sektion {
-    padding: 3.5rem 1.25rem;
-  }
-  .sektion h2 {
-    font-size: 1.9rem;
-  }
-
-  #how-i-work {
-    margin-inline: 1rem;
-    padding: 2.75rem 1.5rem;
-  }
-
-  .steg {
-    gap: 1rem;
-  }
-  .steg li {
-    padding: 1.4rem 1.25rem 1.4rem 4rem;
-  }
-  .steg li::before {
-    left: 1.2rem;
-    top: 1.55rem;
-    font-size: 1.5rem;
-  }
-
-  .fortroende-inre {
-    padding: 3rem 1.5rem;
-    gap: 2rem;
-  }
-
-  .slut-cta {
-    padding: 4rem 1.25rem;
-  }
-  .kontakt-bild {
-    width: 7rem;
-    margin-bottom: 1.5rem;
-  }
 }
 
 /* --- "New to ABA?"-strip mellan bildbandet och förtroendebandet --- */
@@ -394,7 +302,7 @@ strong {
   counter-reset: steg;
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
   gap: 1.5rem;
 }
 
@@ -505,4 +413,100 @@ strong {
   text-align: center;
   color: var(--dov);
   font-size: 0.85rem;
+}
+
+/* ==================================================
+   Mobil — majoriteten av trafiken. Testa alltid här.
+   ================================================== */
+
+@media (max-width: 44rem) {
+  /* Header: en rad — logga + boka-knapp, textlänkarna göms */
+  .site-header {
+    flex-wrap: nowrap;
+    padding: 0.85rem 1.25rem;
+  }
+  .site-header nav a:not(.knapp-liten) {
+    display: none;
+  }
+
+  html {
+    scroll-padding-top: 4rem;
+  }
+
+  /* Hero: text centrerad, fotot i båge under */
+  .hero {
+    min-height: 0;
+    padding: 3.5rem 1.25rem 4rem;
+    text-align: center;
+  }
+  .hero-inre {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .hero h1 {
+    font-size: 2.15rem;
+  }
+  .hero h1 br {
+    display: none;
+  }
+  .hero-text {
+    font-size: 1rem;
+    margin: 0 auto 2rem;
+  }
+  .hero-bild {
+    max-width: min(22rem, 88vw);
+    justify-self: center;
+    transform: rotate(-1.5deg);
+  }
+
+  .bild {
+    margin: 3.5rem auto;
+    padding: 0 1.25rem;
+  }
+
+  .aba-banner {
+    padding: 0 1.25rem 3.5rem;
+  }
+  .bild img {
+    aspect-ratio: 4 / 3;
+    border-radius: 16px;
+  }
+
+  /* Sektioner: mobilanpassad luft */
+  .sektion {
+    padding: 3.5rem 1.25rem;
+  }
+  .sektion h2 {
+    font-size: 1.9rem;
+  }
+
+  #how-i-work {
+    margin-inline: 1rem;
+    padding: 2.75rem 1.5rem;
+  }
+
+  .steg {
+    gap: 1rem;
+  }
+  .steg li {
+    padding: 1.4rem 1.25rem 1.4rem 4rem;
+  }
+  .steg li::before {
+    left: 1.2rem;
+    top: 1.55rem;
+    font-size: 1.5rem;
+  }
+
+  .fortroende-inre {
+    padding: 3rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .slut-cta {
+    padding: 4rem 1.25rem;
+  }
+  .kontakt-bild {
+    width: 7rem;
+    margin-bottom: 1.5rem;
+  }
 }
