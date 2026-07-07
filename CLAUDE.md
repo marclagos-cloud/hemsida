@@ -91,6 +91,33 @@ Text markerad med `<mark class="platshallare">` är platshållare som ska
 bytas mot riktigt innehåll. Just nu finns inga kvar — allt innehåll är
 ifyllt med riktiga uppgifter.
 
+## KI och bisyssloreglerna (viktigt för all copy som nämner KI)
+
+Ingrids verksamhet är en **bisyssla** i förhållande till hennes
+doktorandanställning vid KI. KI:s "Riktlinjer om bisysslor"
+(Dnr 1-918/2020, https://medarbetare.ki.se/media/88885/download — lokal
+kopia i `_underlag/`, medvetet utanför git eftersom repot är publikt)
+säger bl.a.:
+
+- Bisysslan ska hållas **klart åtskild** från KI:s verksamhet
+- Man får **inte ge intryck av att KI medverkar i, auktoriserar eller
+  garanterar** verksamheten
+- **KI:s varumärke/kännetecken får inte användas i bisysslan** utan
+  särskilt beslut; marknadsföring av bisysslan via KI är aldrig tillåten
+- Doktoranders studie-/anställningstid får inte användas i bisysslan
+- Risk för "förtroendeskada" om allmänheten kan uppfatta att utövaren
+  får en särställning genom KI-kopplingen
+
+**Praxis för sajten tills Ingrid stämt av med prefekt/HR:**
+- Neutral, faktisk bio-mening i About me (att hon ÄR doktorand vid KIND/KI)
+  bedöms som CV-fakta — okej att ha kvar, men inte mer än så
+- Använd INTE KI:s namn som säljargument/kännetecken: inte i pelare,
+  rubriker, delningsbilder, taglines e.d.
+- Antyd aldrig att KI står bakom, rekommenderar eller kvalitetssäkrar
+  verksamheten
+- Ingrid bör anmäla/stämma av bisysslan med sin närmaste chef/prefekt
+  (riktlinjerna: samråd vid osäkerhet) — status okänd, fråga henne
+
 ## Teknik
 
 - Ren HTML/CSS/JS — **inget byggsteg, inga ramverk, ingen npm**. Öppna
