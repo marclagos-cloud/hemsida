@@ -197,7 +197,7 @@ strong {
    Platshållare tills det finns ett foto på Ingrid i lek med ett barn. */
 .hero-bild {
   width: 100%;
-  max-width: 30rem;
+  max-width: 34rem;
   height: auto; /* släpper höjd-attributet så aspect-ratio får styra */
   justify-self: end;
   aspect-ratio: 16 / 10;
@@ -225,7 +225,7 @@ strong {
   height: auto; /* släpper höjd-attributet så aspect-ratio får styra */
   aspect-ratio: 21 / 9;
   object-fit: cover;
-  object-position: 50% 72%; /* kritlådan och händerna i fokus */
+  object-position: 50% 68%; /* barnhänderna och stenarna i fokus */
   border-radius: 22px;
 }
 
@@ -454,7 +454,7 @@ strong {
     margin: 0 auto 2rem;
   }
   .hero-bild {
-    max-width: min(22rem, 88vw);
+    max-width: min(24rem, 92vw);
     justify-self: center;
     transform: rotate(-1.5deg);
   }
