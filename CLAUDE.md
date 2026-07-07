@@ -122,6 +122,10 @@ säger bl.a.:
 
 - Ren HTML/CSS/JS — **inget byggsteg, inga ramverk, ingen npm**. Öppna
   `index.html` i webbläsaren för att se sidan.
+- **Cache-busting:** css/js länkas med versionsparameter
+  (`css/style.css?v=2`). GitHub Pages cachar filer i 10 min, så ändrar du
+  css/style.css eller js/main.js: **bumpa `?v=`-numret i ALLA html-filer**,
+  annars kan besökare få ny HTML mot gammal CSS (trasig layout).
 - Färger och typsnitt styrs av CSS-variablerna längst upp i `css/style.css`.
 - All text på sidan är på svenska.
 
