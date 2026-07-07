@@ -29,22 +29,35 @@ barnet är ett problem som ska fixas. Regler:
 - Målet formuleras som well-being, kommunikation, autonomi, lek, bra dagar
   — aldrig att göra barnet "mindre autistiskt" eller lära det maskera
 - Ingrids hållning: "alongside the child", assent-based, följer barnets
-  initiativ; ABA-kritiken bemöts öppet och ärligt (se #approach-sektionen)
+  initiativ; ABA-kritiken bemöts öppet men kort, inuti "How I work" —
+  **inte** som egen sektion som leder med kritiken (kompis-feedback 7 juli)
 - I övrigt: varmt, lugnt, konkret. Ingen säljighet, inga överdrivna löften
 
 **Mobilen först:** majoriteten av trafiken är mobil. Granska varje ändring
 i 390px-vy innan den pushas — mobilanpassningarna ligger samlade i en
 media query (`max-width: 44rem`) längst ned i `css/style.css`.
-**Håll texterna korta** — Marc tyckte sidan blev för lång på mobil; rytmen
-är "lite copy, sen en bild" (`figure.bild`-band mellan sektioner).
+
+**Struktur & copy (efter kompis-feedback, 7 juli — Marc godkände):**
+- **Få sektioner med substans** hellre än många tunna: Hero → About me →
+  How I work (inkl. stegen) → förtroendeband → kontakt. Besökaren är ingen
+  random — hen vill förstå hur Ingrid jobbar och vem hon är som person
+- **Inte kommersiellt:** inga priser på sidan, fokus på introsamtalet.
+  Undvik säljfraser ("Free, no strings attached", "No pressure" osv) —
+  det räcker att nämna en gång att samtalet är gratis
+- **Inga självcitat** — sidan är portfolio/CV-lik, Ingrid kan inte quota
+  Ingrid
+- ABA ska förklaras enkelt (vad det är, hur det ser ut i praktiken), inte
+  bara försvaras
 
 **Bilder** (på plats sedan 7 juli, Marc valde ur tre varianter):
 - Hero: `img/hero-beads.jpg` (vattenpärlor) i en **bågform** (`.hero-bild`,
   radie 300px upptill — samma formspråk som pillerknapparna), till höger om
   rubriken på desktop, under texten på mobil
-- Bildband `img/reading.jpg` efter How it works, handavtrycken
-  `img/handprints.jpg` ovanför citatet (vit bakgrund smälter in via
-  `mix-blend-mode: multiply`)
+- Bildband `img/reading.jpg` efter How I work, handavtrycken
+  `img/handprints.jpg` överst i kontaktsektionen (vit bakgrund smälter in
+  i guldet via `mix-blend-mode: multiply`)
+- **Saknas: foto på Ingrid** — kompisen efterlyste det, Marc har inga bra
+  bilder just nu. Läggs in när det finns (trolig plats: About me)
 - Lärdom från skrotade försöket 6 juli: inga mörka overlays på foton, inga
   platta fullbreddsband — rundade former och ljus bakgrund
 - OBS: `height: auto` krävs på img-klasserna, annars vinner höjd-attributet

@@ -245,60 +245,6 @@ strong {
   color: var(--text);
 }
 
-/* --- Tjänster: rubrik vänster, färgblock höger --- */
-
-.tjanster {
-  display: grid;
-  grid-template-columns: minmax(16rem, 2fr) 3fr;
-  gap: 3rem;
-  max-width: 72rem;
-  margin: 0 auto;
-  padding: 5.5rem 1.5rem;
-}
-
-.tjanster-rubrik h2 {
-  font-size: clamp(2.6rem, 6vw, 4.2rem);
-}
-
-.tjanster-rubrik {
-  position: sticky;
-  top: 7rem;
-  align-self: start;
-}
-
-.tjanster-block {
-  display: grid;
-  gap: 1.25rem;
-}
-
-.block {
-  padding: 2.5rem clamp(1.5rem, 4vw, 3rem);
-}
-
-.block-sky  { background: var(--himmel); }
-.block-gold { background: var(--guld); }
-.block-teal { background: var(--teal); }
-
-.block h3 {
-  font-size: 1.75rem;
-  margin-bottom: 0.75rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 1rem;
-}
-
-.block .nr {
-  font-size: 1.1rem;
-  opacity: 0.55;
-}
-
-.block .pris {
-  margin-top: 1.25rem;
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
-}
-
 /* ==================================================
    Mobil — majoriteten av trafiken. Testa alltid här.
    ================================================== */
@@ -352,12 +298,6 @@ strong {
     border-radius: 16px;
   }
 
-  .citat-bild {
-    width: 7.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-
   /* Sektioner: mobilanpassad luft */
   .sektion {
     padding: 3.5rem 1.25rem;
@@ -366,27 +306,9 @@ strong {
     font-size: 1.9rem;
   }
 
-  #approach {
+  #how-i-work {
     margin-inline: 1rem;
     padding: 2.75rem 1.5rem;
-  }
-
-  .tjanster {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 3.5rem 1.25rem;
-  }
-  .tjanster-rubrik {
-    position: static;
-  }
-  .tjanster-rubrik h2 {
-    font-size: 2.4rem;
-  }
-  .block {
-    padding: 1.75rem 1.4rem;
-  }
-  .block h3 {
-    font-size: 1.45rem;
   }
 
   .steg {
@@ -406,30 +328,25 @@ strong {
     gap: 2rem;
   }
 
-  .citat blockquote {
-    font-size: 1.65rem;
-  }
-  .citat .attribution {
-    margin-top: 1.25rem;
-  }
-
   .slut-cta {
     padding: 4rem 1.25rem;
   }
+  .kontakt-bild {
+    width: 7rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
-/* --- About ABA: panel med färg runt texten --- */
+/* --- How I work: panel med färg runt texten, stegen sist --- */
 
-#approach {
+#how-i-work {
   background: var(--himmel);
   max-width: 62rem;
   padding: 4.5rem clamp(2rem, 6vw, 5.5rem);
 }
 
-/* --- How it works: kort i 2x2-rutnät --- */
-
-#how-it-works {
-  max-width: 64rem;
+.steg-kicker {
+  margin-top: 3.25rem;
 }
 
 .steg {
@@ -499,39 +416,6 @@ strong {
   font-size: 0.92rem;
 }
 
-/* --- Citat --- */
-
-.citat {
-  max-width: 60rem;
-}
-
-/* Handavtrycken: vit bakgrund smälter in i sidfärgen via multiply */
-.citat-bild {
-  width: 9.5rem;
-  height: auto;
-  margin-bottom: 2rem;
-  mix-blend-mode: multiply;
-}
-
-.citat blockquote {
-  font-family: var(--serif);
-  font-size: clamp(1.9rem, 4.5vw, 3rem);
-  line-height: 1.3;
-}
-
-.citat blockquote em {
-  font-style: italic;
-}
-
-.citat .attribution {
-  margin-top: 2rem;
-  text-align: right;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.78rem;
-  color: var(--dov);
-}
-
 /* --- Slut-CTA (guldblock) --- */
 
 .slut-cta {
@@ -545,9 +429,13 @@ strong {
   margin: 0 auto;
 }
 
-.slut-cta .kicker {
-  color: var(--text);
-  opacity: 0.7;
+/* Handavtrycken: vit bakgrund smälter in i guldet via multiply */
+.kontakt-bild {
+  display: block;
+  width: 9rem;
+  height: auto;
+  margin: 0 auto 1.75rem;
+  mix-blend-mode: multiply;
 }
 
 .slut-cta h2 {
