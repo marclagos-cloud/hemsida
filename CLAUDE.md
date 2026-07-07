@@ -61,6 +61,10 @@ media query (`max-width: 44rem`) längst ned i `css/style.css`.
   i guldet via `mix-blend-mode: multiply`)
 - **Saknas: foto på Ingrid** — kompisen efterlyste det, Marc har inga bra
   bilder just nu. Läggs in när det finns (trolig plats: About me)
+- Favicon (`img/favicon.svg` + PNG-fallbacks) och OG-bild
+  (`img/og-image.jpg`, genereras från skärmdump av ett HTML-kort) finns.
+  **Vid domänbyte:** uppdatera de absoluta `og:url`/`og:image`-URL:erna
+  i `index.html`
 - Lärdom från skrotade försöket 6 juli: inga mörka overlays på foton, inga
   platta fullbreddsband — rundade former och ljus bakgrund
 - OBS: `height: auto` krävs på img-klasserna, annars vinner höjd-attributet
