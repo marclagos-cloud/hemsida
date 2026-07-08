@@ -203,6 +203,13 @@ strong {
   font-size: clamp(2.6rem, 6vw, 5.3rem);
 }
 
+/* Utan bild centreras CTA-knappen under rubriken */
+.hero-typo .knapp {
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
+}
+
 /* Guldsvepet under kursiven: handritat penseldrag som inbäddad SVG,
    mörkare guld än --guld för att synas mot ljus teal */
 .svep {
