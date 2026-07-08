@@ -141,6 +141,19 @@ säger bl.a.:
 
 - Ren HTML/CSS/JS — **inget byggsteg, inga ramverk, ingen npm**. Öppna
   `index.html` i webbläsaren för att se sidan.
+- **Typsnitten är självhostade** (8/7, GDPR + prestanda): woff2-filer i
+  `fonts/`, @font-face överst i style.css, preload-taggar i html-huvudena.
+  **Länka ALDRIG tillbaka Google Fonts** i html-filerna. Nya vikter:
+  ladda ner woff2 och lägg i `fonts/` (Public Sans-filen är variabel,
+  täcker redan 300-600).
+- **Tillgänglighet:** sajten ligger på Lighthouse 100 (a11y). `--dov`
+  är medvetet mörkad till #4d5f66 så den klarar WCAG AA (4.5:1) mot
+  teal/himmel — ljusa inte upp den utan att räkna kontrast först.
+- `404.html` finns (fristående, absoluta `/hemsida/`-sökvägar — byt vid
+  domänbyte).
+- **Ej ännu (medvetet):** SEO-satsningar, strukturerad data, analytics,
+  domän. Sajten "jagar inte kunder" än; det spåret aktiveras när Ingrid
+  säger till (Marcs beslut 8/7).
 - **Cache-busting:** css/js länkas med versionsparameter
   (`css/style.css?v=2`). GitHub Pages cachar filer i 10 min, så ändrar du
   css/style.css eller js/main.js: **bumpa `?v=`-numret i ALLA html-filer**,
