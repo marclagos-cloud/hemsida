@@ -5,10 +5,35 @@
    Egen palett: ink + teal + guld + himmelsblå
    ================================================== */
 
+/* Självhostade typsnitt (8/7): inga anrop till Googles servrar,
+   bättre för GDPR och laddtid. OFL-licens, se fonts/LÄSMIG.txt.
+   public-sans-vf är variabel och täcker vikt 300-600. */
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/playfair-display-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/playfair-display-400-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url("../fonts/public-sans-vf.woff2") format("woff2");
+}
+
 :root {
   --bg: #fbfaf7;
   --text: #21353c;
-  --dov: #5c6f75;
+  --dov: #4d5f66; /* mörkad 8/7: klarar WCAG AA (4.5:1) även på teal/himmel */
   --teal-mork: #274e53;
   --teal: #d8e6e3;
   --guld: #f0e3c0;

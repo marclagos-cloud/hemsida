@@ -1,0 +1,3 @@
+Typsnitt hämtade från Google Fonts 8 juli 2026, självhostade för GDPR + prestanda.
+Playfair Display: SIL Open Font License. Public Sans: SIL Open Font License.
+public-sans-vf.woff2 är variabel (vikt 300-600).
