@@ -95,6 +95,17 @@ strong {
   font-size: 1.35rem;
   color: var(--text);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+/* Groddmärket: logga bredvid namnet (Marcs val 8/7, spår A) */
+.logo-marke {
+  height: 1.5em;
+  width: auto;
+  flex: none;
+  display: block;
 }
 
 .site-header nav {

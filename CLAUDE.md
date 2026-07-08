@@ -83,6 +83,16 @@ media query (`max-width: 44rem`) längst ned i `css/style.css`.
   till 1400–1800 px jpeg ~75, inga synliga ansikten, stäm av med Marc innan
   push. Croppen i bågen styrs per bild med en `object-position`-klass.
 
+**Logga (beslut Marc 8/7): groddmärket.** En liten grodd (stjälk + två
+blad i ljus teal och guld) står bredvid namnet i headern. Symboliken:
+thrive, något som växer åt sitt eget håll. Puzzelbit/hjärta/hjärna är
+medvetet bortvalda som symboler (klyschor; pusselbiten är avvisad av
+neurodiversitetsrörelsen). Tekniskt: SVG:n ligger inline i `.logo`-länken
+i båda html-filerna (klasserna `.logo`/`.logo-marke` i css). Favicon +
+apple-touch-icon är omgjorda till grodd på mörk platta (`img/favicon.svg`
+är källan; PNG-fallbackarna genererade från samma SVG). Ingrid har inte
+sett märket ännu, hennes veto gäller.
+
 **Designsystem:**
 - Rubriker: Playfair Display 400 via Google Fonts — **aldrig fet**, gärna
   stor skala och kursiv betoning på enstaka ord
