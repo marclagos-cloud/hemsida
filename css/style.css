@@ -332,6 +332,13 @@ strong {
   margin-bottom: 0.35rem;
 }
 
+/* Diskret väg till kontakt direkt efter stegen (kundrese-fix 8/7) */
+.steg-cta {
+  margin-top: 2.25rem;
+  text-align: center;
+  color: var(--dov);
+}
+
 /* --- Förtroendepelare (ljus teal-band) --- */
 
 .fortroende {
