@@ -69,11 +69,12 @@ media query (`max-width: 44rem`) längst ned i `css/style.css`.
   mångfald är bra och önskvärd där. Men en person som kan läsas som VUXEN
   läses som Ingrid själv och måste likna henne (vit). Kritbilden byttes
   av det skälet (vuxenarm i bild)
-- Favicon (`img/favicon.svg` + PNG-fallbacks) finns. OG-bilden
-  (`img/og-image.jpg`) är typografisk i samma stil som heron och
-  genereras från `_og-card.html` (rendera i 1200x630, skärmdumpa,
+- Favicon (`img/favicon.svg` + PNG-fallbacks) = grodden på mörk platta.
+  OG-bilden (`img/og-image.jpg`) är typografisk med groddmärket överst
+  och genereras från `_og-card.html` (rendera i 1200x630, skärmdumpa,
   sips till jpeg ~75). **Vid domänbyte:** uppdatera de absoluta
-  `og:url`/`og:image`-URL:erna i `index.html`
+  `og:url`/`og:image`-URL:erna i `index.html` + `/hemsida/`-sökvägarna
+  i `404.html`
 - Lärdom från skrotade försöket 6 juli: inga mörka overlays på foton, inga
   platta fullbreddsband — rundade former och ljus bakgrund
 - OBS: `height: auto` krävs på img-klasserna, annars vinner höjd-attributet
