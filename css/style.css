@@ -97,6 +97,8 @@ strong {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
+  .steg li { transition: none; }
+  .steg li:hover { transform: none; box-shadow: none; }
 }
 
 /* --- Header --- */
@@ -298,6 +300,24 @@ strong {
   padding-bottom: 0;
 }
 
+/* Tillbaka-länk överst på undersidor: loggan går också hem, men på
+   mobilen är headerns textlänkar gömda och alla kan inte konventionen */
+.tillbaka {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.tillbaka a {
+  color: var(--dov);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.tillbaka a:hover {
+  border-bottom-color: var(--dov);
+}
+
 .undersida-hero h1 {
   font-size: clamp(2.4rem, 6vw, 3.6rem);
   margin-bottom: 1.5rem;
@@ -339,6 +359,12 @@ strong {
   background: #fffdf9;
   border: 1px solid var(--kant);
   padding: 2rem 2rem 2rem 5.2rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.steg li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(33, 53, 60, 0.1);
 }
 
 .steg li::before {
