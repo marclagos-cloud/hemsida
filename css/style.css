@@ -158,7 +158,7 @@ strong {
   margin-bottom: 1.25rem;
 }
 
-/* --- Hero: text vänster, bild i rundat kort höger --- */
+/* --- Hero: typografisk, stor rubrik med guldsvep under kursiven --- */
 
 .hero {
   background: var(--teal);
@@ -193,40 +193,23 @@ strong {
   margin: 0 0 2.25rem;
 }
 
-/* Bilden: rundat kort med lätt lutning, som en teckning på kylskåpet.
-   Platshållare tills det finns ett foto på Ingrid i lek med ett barn. */
-.hero-bild {
-  width: 100%;
-  max-width: 34rem;
-  height: auto; /* släpper höjd-attributet så aspect-ratio får styra */
-  justify-self: end;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  border-radius: 22px;
-  transform: rotate(-2deg);
-  background: #fff;
-  box-shadow: 0 24px 48px rgba(33, 53, 60, 0.14);
-}
-
-/* Croppen styrs per foto så motivet hamnar rätt i kortet */
-.hero-bild-blommor { object-position: 50% 68%; }
-
-/* --- Bildband: brett foto med rundade hörn --- */
-
-.bild {
-  max-width: 64rem;
-  margin: 5.5rem auto;
-  padding: 0 1.5rem;
-}
-
-.bild img {
+/* Typografisk hero (utan bild): copyn får hela bredden och rubriken
+   växer ett snäpp. Klassen sitter på sektionen i index.html. */
+.hero-typo .hero-inre {
   display: block;
-  width: 100%;
-  height: auto; /* släpper höjd-attributet så aspect-ratio får styra */
-  aspect-ratio: 21 / 9;
-  object-fit: cover;
-  object-position: 50% 68%; /* barnhänderna och stenarna i fokus */
-  border-radius: 22px;
+}
+
+.hero-typo h1 {
+  font-size: clamp(2.6rem, 6vw, 5.3rem);
+}
+
+/* Guldsvepet under kursiven: handritat penseldrag som inbäddad SVG,
+   mörkare guld än --guld för att synas mot ljus teal */
+.svep {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 20' preserveAspectRatio='none'%3E%3Cpath d='M5 14 C 70 7, 160 5, 295 11' fill='none' stroke='%23d9b96a' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat 50% 100% / 100% 0.22em;
+  padding-bottom: 0.14em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 /* --- Sektioner --- */
@@ -255,7 +238,8 @@ strong {
 .aba-banner {
   max-width: var(--max-bredd);
   margin: 0 auto;
-  padding: 0 1.5rem 5.5rem;
+  /* topp-luften ersätter bildbandet som låg här tidigare */
+  padding: 5.5rem 1.5rem;
   text-align: center;
 }
 
@@ -446,6 +430,9 @@ strong {
   .hero h1 {
     font-size: 2.15rem;
   }
+  .hero-typo h1 {
+    font-size: 2.35rem;
+  }
   .hero h1 br {
     display: none;
   }
@@ -453,23 +440,9 @@ strong {
     font-size: 1rem;
     margin: 0 auto 2rem;
   }
-  .hero-bild {
-    max-width: min(24rem, 92vw);
-    justify-self: center;
-    transform: rotate(-1.5deg);
-  }
-
-  .bild {
-    margin: 3.5rem auto;
-    padding: 0 1.25rem;
-  }
 
   .aba-banner {
-    padding: 0 1.25rem 3.5rem;
-  }
-  .bild img {
-    aspect-ratio: 4 / 3;
-    border-radius: 16px;
+    padding: 3.5rem 1.25rem;
   }
 
   /* Sektioner: mobilanpassad luft */

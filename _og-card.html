@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>OG-kort (mall för img/og-image.jpg)</title>
+  <!--
+    Delningskortet: rendera i Chrome med fönstret 1200x630,
+    ta skärmdump och spara som img/og-image.jpg (sips till 1200 px bredd,
+    jpeg ~75). Typografiskt, i samma stil som heron på index.html.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Public+Sans:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1200px;
+      height: 630px;
+      background: #d8e6e3;
+      color: #21353c;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    .kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: 600;
+      font-size: 26px;
+      color: #48767c;
+      margin-bottom: 34px;
+    }
+    h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-weight: 400;
+      font-size: 128px;
+      line-height: 1.1;
+      margin-bottom: 40px;
+    }
+    .svep {
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 20' preserveAspectRatio='none'%3E%3Cpath d='M5 14 C 70 7, 160 5, 295 11' fill='none' stroke='%23d9b96a' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat 50% 100% / 100% 0.22em;
+      padding-bottom: 0.14em;
+    }
+    .undertext {
+      font-size: 34px;
+      line-height: 1.5;
+      color: #5c6f75;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p class="kicker">BCBA · PhD researcher in autism</p>
+    <h1><span class="svep">Ingrid Shragge</span></h1>
+    <p class="undertext">One-to-one support for autistic children in&nbsp;Stockholm, in English or Swedish.</p>
+  </div>
+</body>
+</html>

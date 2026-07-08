@@ -52,28 +52,28 @@ media query (`max-width: 44rem`) längst ned i `css/style.css`.
 - ABA ska förklaras enkelt (vad det är, hur det ser ut i praktiken), inte
   bara försvaras
 
-**Bilder** (läget 7 juli kväll):
-- Hero: `img/hero-painting.jpg` (ett barns vattenfärgsblommor) i rundat
-  kort (`.hero-bild`, 22px radie, lätt rotation, skugga). PLATSHÅLLARE
-  tills det finns ett foto på Ingrid i lek med ett barn; fotobrief finns
-  på Marcs skrivbord (`fotobrief-ingrid.txt`)
-- Bildband `img/rock-painting.jpg` (barnhänder målar stenar) efter How I
-  work, handavtrycken `img/handprints.jpg` överst i kontaktsektionen (vit
-  bakgrund smälter in i guldet via `mix-blend-mode: multiply`)
+**Bilder** (läget 8 juli):
+- **Heron är typografisk** (Marcs beslut 8/7): ingen bild, stor rubrik
+  med guldsvep under kursiven (`.svep`, inbäddad SVG i css). Bildbandet
+  efter How I work är slopat (`.aba-banner` fick topp-luft i stället).
+  Skäl: stockbilder fastnade på 6-7 av 10; riktiga foton eller ren
+  typografi är ribban. `hero-painting.jpg` och `rock-painting.jpg` är
+  raderade (`v1/` har egna kopior, orörda)
+- Detta är en "for now"-lösning: **nästa steg är riktiga foton på Ingrid**
+  (lek med barn till heron + porträtt till About me), fotobrief på Marcs
+  skrivbord (`fotobrief-ingrid.txt`)
+- Kvar i bruk: handavtrycken `img/handprints.jpg` överst i
+  kontaktsektionen (vit bakgrund smälter in i guldet via
+  `mix-blend-mode: multiply`)
 - **Bildprincip (7/7):** stockfoton på BARN läses som Ingrids klienter,
   mångfald är bra och önskvärd där. Men en person som kan läsas som VUXEN
   läses som Ingrid själv och måste likna henne (vit). Kritbilden byttes
   av det skälet (vuxenarm i bild)
-- **Förslag under beslut hos Marc (pausat 7/7):** typografisk hero (ingen
-  bild, guldsvep under kursiven) + bildbandet slopat helt; ligger som
-  `_preview-typo.html` lokalt hos Marc, ej committat. Skäl: stockbilder
-  fastnar på 6-7 av 10, riktiga foton eller ren typografi är vägen till 10
-- **Saknas: foto på Ingrid** (lek med barn till heron + porträtt till
-  About me), se fotobriefen
-- Favicon (`img/favicon.svg` + PNG-fallbacks) och OG-bild
-  (`img/og-image.jpg`, genereras från skärmdump av ett HTML-kort) finns.
-  **Vid domänbyte:** uppdatera de absoluta `og:url`/`og:image`-URL:erna
-  i `index.html`
+- Favicon (`img/favicon.svg` + PNG-fallbacks) finns. OG-bilden
+  (`img/og-image.jpg`) är typografisk i samma stil som heron och
+  genereras från `_og-card.html` (rendera i 1200x630, skärmdumpa,
+  sips till jpeg ~75). **Vid domänbyte:** uppdatera de absoluta
+  `og:url`/`og:image`-URL:erna i `index.html`
 - Lärdom från skrotade försöket 6 juli: inga mörka overlays på foton, inga
   platta fullbreddsband — rundade former och ljus bakgrund
 - OBS: `height: auto` krävs på img-klasserna, annars vinner höjd-attributet
@@ -155,6 +155,9 @@ säger bl.a.:
   train eye contact") — Ingrid bör läsa igenom, väntar på hennes review.
 - `css/style.css` — all stil samlad i en fil.
 - `js/main.js` — javascript, bara om det behövs.
+- `_og-card.html` — mall för delningsbilden `img/og-image.jpg` (ingår i
+  repot men länkas inte från sajten). Se kommentaren i filen för hur
+  bilden genereras om.
 
 ## Arbetssätt (viktigt — vi är två!)
 
