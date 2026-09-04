@@ -58,7 +58,7 @@ media query (`max-width: 44rem`) längst ned i `css/style.css`.
   efter How I work är slopat (`.aba-banner` fick topp-luft i stället).
   Skäl: stockbilder fastnade på 6-7 av 10; riktiga foton eller ren
   typografi är ribban. `hero-painting.jpg` och `rock-painting.jpg` är
-  raderade (`v1/` har egna kopior, orörda)
+  raderade (kopiorna i `v1/` försvann när mappen togs bort 2/9 2026, finns i git-historiken)
 - Detta är en "for now"-lösning: **nästa steg är riktiga foton på Ingrid**
   (lek med barn till heron + porträtt till About me), fotobrief på Marcs
   skrivbord (`fotobrief-ingrid.txt`)
@@ -170,9 +170,6 @@ säger bl.a.:
 ## Struktur
 
 - `index.html` — startsidan. Nya sidor läggs som egna html-filer i roten.
-- `v1/` — **frusen ögonblicksbild av sajten 7 juli 2026** (Marc delade den
-  med sin handledare för feedback). Rör den inte; tas bort när feedbacken
-  är inhämtad. Har `noindex` så Google inte ser dubblettinnehåll.
 - `what-is-aba.html` — "What is ABA?", FAQ-guide för föräldrar som inte
   vet vad ABA är (kompis-feedback). Nås via pillerknappen i How I work.
   OBS: gör konkreta ställningstaganden i Ingrids namn (t.ex. "I don't
