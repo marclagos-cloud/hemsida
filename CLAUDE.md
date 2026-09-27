@@ -34,13 +34,13 @@ terapisajter som referens: wildberry.studio/website-design-therapists, sv.beatae
 oakandstonetherapy.com, shonaghwrightphillips.co.uk. Rityta med tre förslag på hero och logga:
 https://claude.ai/artifact/SD6gVWQunYvR9fME8H6YRE (privat, Marcs konto).
 - A Soluppgång: persikobotten, sol och vågränder, typsnittet Fraunces, logga sol över tre vågor.
-  **Marc och Ingrid gillar A.**
+  **Favoriten (Marc 27/9: "vi gillar den").**
 - B Målningen: målad solnedgång i helbild, ljust textkort ovanpå (Shonagh-stil), Playfair.
 - C Tavlan: text vänster med markerat kursivt ord (Wild Berry), inramad målning höger med
   förskjutet salviablock (Oak and Stone), band med arbetssätt längst ner.
 - Rekommenderad logga (B och C): INGRID SHRAGGE i glesa versaler, solen och vågorna som märke,
   "CHILD & FAMILY SUPPORT" under.
-- Inget beslut taget. Väljs A eller C ändras palett och typsnitt, då ska `DESIGN.md` skrivas om
+- Inget beslut taget. Alla tre byter palett (A även typsnitt), då ska `DESIGN.md` skrivas om
   först. Groddmärket gäller tills vidare.
 
 ## Mobilen först
